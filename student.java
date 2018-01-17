@@ -1,29 +1,32 @@
-// Method overriding
+public class Student {
 
-class school
-{
- void run()
- {
-  System.out.println("school running");
-  }
- }
+    private String name;
 
-class college extends school
-{
- void run()
- {
-  System.out.println("college running");
-  System.out.println("THANK U");
- }
-}
+    private String lastName;
 
-class student
-{
- public static void main(String args[])
- {
-  school c = new college();//upcasting
-  c.run();
-  school s = new school();
-  s.run();
- }
+    private String middleName;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
 }
